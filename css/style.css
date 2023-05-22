@@ -332,3 +332,7 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+
+.loader {
+  display: block;
+}
