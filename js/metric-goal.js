@@ -14,13 +14,6 @@
     a.parentNode.insertBefore(k, a);
 })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-// METRIC INIT
-//
-//
-//
-//
-//
-
 // HEADER
 
 const header_about = document.querySelector('[data-metric="1"]');
@@ -87,75 +80,165 @@ const footer_sharing = document.querySelector('[data-metric="46"]');
 
 // >FOOTER
 
-//
-//
-//
-//
-//
-// >METRIC INIT
+init();
+function init() {
+  // HEADER
+
+  header_about.addEventListener("click", () => {
+    metricGoal("header_about");
+  });
+
+  header_manifest.addEventListener("click", () => {
+    metricGoal("header_manifest");
+  });
+  header_support.addEventListener("click", () => {
+    metricGoal("header_support");
+  });
+
+  // >HEADER
+
+  tass_14631483.addEventListener("click", () => {
+    metricGoal("tass_14631483");
+  });
+  instrustion.addEventListener("click", () => {
+    metricGoal("instrustion");
+  });
+
+  share_citation1.addEventListener("click", () => {
+    metricGoal("1_share_citation");
+  });
+  share_citation2.addEventListener("click", () => {
+    metricGoal("2_share_citation");
+  });
+  share_citation3.addEventListener("click", () => {
+    metricGoal("3_share_citation");
+  });
+  share_citation4.addEventListener("click", () => {
+    metricGoal("4_share_citation");
+  });
+  share_citation5.addEventListener("click", () => {
+    metricGoal("5_share_citation");
+  });
+  share_citation6.addEventListener("click", () => {
+    metricGoal("6_share_citation");
+  });
+  share_citation7.addEventListener("click", () => {
+    metricGoal("7_share_citation");
+  });
+  share_citation8.addEventListener("click", () => {
+    metricGoal("8_share_citation");
+  });
+  share_citation9.addEventListener("click", () => {
+    metricGoal("9_share_citation");
+  });
+
+  download1.addEventListener("click", () => {
+    metricGoal("1_download");
+  });
+  download2.addEventListener("click", () => {
+    metricGoal("2_download");
+  });
+  download3.addEventListener("click", () => {
+    metricGoal("3_download");
+  });
+  download4.addEventListener("click", () => {
+    metricGoal("4_download");
+  });
+  download5.addEventListener("click", () => {
+    metricGoal("5_download");
+  });
+  download6.addEventListener("click", () => {
+    metricGoal("6_download");
+  });
+  download7.addEventListener("click", () => {
+    metricGoal("7_download");
+  });
+  download8.addEventListener("click", () => {
+    metricGoal("8_download");
+  });
+  download9.addEventListener("click", () => {
+    metricGoal("9_download");
+  });
+
+  share_social1.addEventListener("click", () => {
+    metricGoal("1_share_social");
+  });
+  share_social2.addEventListener("click", () => {
+    metricGoal("2_share_social");
+  });
+  share_social3.addEventListener("click", () => {
+    metricGoal("3_share_social");
+  });
+  share_social4.addEventListener("click", () => {
+    metricGoal("4_share_social");
+  });
+  share_social5.addEventListener("click", () => {
+    metricGoal("5_share_social");
+  });
+  share_social6.addEventListener("click", () => {
+    metricGoal("6_share_social");
+  });
+  share_social7.addEventListener("click", () => {
+    metricGoal("7_share_social");
+  });
+  share_social8.addEventListener("click", () => {
+    metricGoal("8_share_social");
+  });
+  share_social9.addEventListener("click", () => {
+    metricGoal("9_share_social");
+  });
+
+  block1.addEventListener("click", () => {
+    metricGoal("1_block");
+  });
+  block2.addEventListener("click", () => {
+    metricGoal("2_block");
+  });
+  block3.addEventListener("click", () => {
+    metricGoal("3_block");
+  });
+  block4.addEventListener("click", () => {
+    metricGoal("4_block");
+  });
+  block5.addEventListener("click", () => {
+    metricGoal("5_block");
+  });
+  block6.addEventListener("click", () => {
+    metricGoal("6_block");
+  });
+  block7.addEventListener("click", () => {
+    metricGoal("7_block");
+  });
+  block8.addEventListener("click", () => {
+    metricGoal("8_block");
+  });
+  block9.addEventListener("click", () => {
+    metricGoal("9_block");
+  });
+
+  share_manifest.addEventListener("click", () => {
+    metricGoal("share_manifest");
+  });
+
+  // FOOTER
+
+  footer_manifest.addEventListener("click", () => {
+    metricGoal("footer_manifest");
+  });
+  footer_support.addEventListener("click", () => {
+    metricGoal("footer_support");
+  });
+  footer_about.addEventListener("click", () => {
+    metricGoal("footer_about");
+  });
+  footer_sharing.addEventListener("click", () => {
+    metricGoal("footer_sharing");
+  });
+
+  // >FOOTER
+}
 
 function metricGoal(event) {
   ym(93639951, "reachGoal", event);
+  console.log("сработал");
 }
-
-// HEADER
-
-header_about.addEventListener("click", metricGoal("header_about"));
-header_manifest.addEventListener("click", metricGoal("header_manifest"));
-header_support.addEventListener("click", metricGoal("header_support"));
-
-// >HEADER
-
-tass_14631483.addEventListener("click", metricGoal("tass_14631483"));
-instrustion.addEventListener("click", metricGoal("instrustion"));
-
-share_citation1.addEventListener("click", metricGoal("1_share_citation"));
-share_citation2.addEventListener("click", metricGoal("2_share_citation"));
-share_citation3.addEventListener("click", metricGoal("3_share_citation"));
-share_citation4.addEventListener("click", metricGoal("4_share_citation"));
-share_citation5.addEventListener("click", metricGoal("5_share_citation"));
-share_citation6.addEventListener("click", metricGoal("6_share_citation"));
-share_citation7.addEventListener("click", metricGoal("7_share_citation"));
-share_citation8.addEventListener("click", metricGoal("8_share_citation"));
-share_citation9.addEventListener("click", metricGoal("9_share_citation"));
-
-download1.addEventListener("click", metricGoal("1_download"));
-download2.addEventListener("click", metricGoal("2_download"));
-download3.addEventListener("click", metricGoal("3_download"));
-download4.addEventListener("click", metricGoal("4_download"));
-download5.addEventListener("click", metricGoal("5_download"));
-download6.addEventListener("click", metricGoal("6_download"));
-download7.addEventListener("click", metricGoal("7_download"));
-download8.addEventListener("click", metricGoal("8_download"));
-download9.addEventListener("click", metricGoal("9_download"));
-
-share_social1.addEventListener("click", metricGoal("1_share_social"));
-share_social2.addEventListener("click", metricGoal("2_share_social"));
-share_social3.addEventListener("click", metricGoal("3_share_social"));
-share_social4.addEventListener("click", metricGoal("4_share_social"));
-share_social5.addEventListener("click", metricGoal("5_share_social"));
-share_social6.addEventListener("click", metricGoal("6_share_social"));
-share_social7.addEventListener("click", metricGoal("7_share_social"));
-share_social8.addEventListener("click", metricGoal("8_share_social"));
-share_social9.addEventListener("click", metricGoal("9_share_social"));
-
-block1.addEventListener("click", metricGoal("1_block"));
-block2.addEventListener("click", metricGoal("2_block"));
-block3.addEventListener("click", metricGoal("3_block"));
-block4.addEventListener("click", metricGoal("4_block"));
-block5.addEventListener("click", metricGoal("5_block"));
-block6.addEventListener("click", metricGoal("6_block"));
-block7.addEventListener("click", metricGoal("7_block"));
-block8.addEventListener("click", metricGoal("8_block"));
-block9.addEventListener("click", metricGoal("9_block"));
-
-share_manifest.addEventListener("click", metricGoal("share_manifest"));
-
-// FOOTER
-
-footer_manifest.addEventListener("click", metricGoal("footer_manifest"));
-footer_support.addEventListener("click", metricGoal("footer_support"));
-footer_about.addEventListener("click", metricGoal("footer_about"));
-footer_sharing.addEventListener("click", metricGoal("footer_sharing"));
-
-// >FOOTER
